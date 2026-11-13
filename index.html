@@ -533,12 +533,49 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
 .exthumb{height:120px;border-radius:14px;background:repeating-conic-gradient(#f1efeb 0 25%,#fff 0 50%) 0 0/16px 16px;display:grid;place-items:center;padding:12px;font-size:13px;color:var(--mute);text-align:center}.exthumb img{max-height:100%;max-width:100%;object-fit:contain}
 .exneed{background:var(--warnbg)!important;color:var(--warn)!important;border-radius:10px;padding:8px 10px;font-size:13px!important}
 .exul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+/* ===== mis paletas ===== */
+.libbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:14px 16px;margin-bottom:16px}.libbar .sp{flex:1}
+.liblay{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:start}@media(max-width:860px){.liblay{grid-template-columns:1fr}}
+.libside{margin:0;padding:8px;display:grid;gap:2px;position:sticky;top:96px}
+.lf{display:flex;align-items:center;gap:8px;padding:10px 10px;border-radius:12px;cursor:pointer;font-size:14px}.lf:hover{background:var(--soft)}.lf.on{background:var(--ink);color:#fff}
+.lf b{flex:1;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lf .cnt{font-size:11px;background:#0000000f;border-radius:999px;padding:1px 8px}.lf.on .cnt{background:#ffffff30}
+.lfa{display:none;gap:2px}.lf:hover .lfa{display:flex}.lfa button{border:0;background:transparent;cursor:pointer;color:inherit;font-size:13px;padding:2px 4px;border-radius:6px}.lfa button:hover{background:#00000014}
+.lph{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}.lph h3{margin:0;font:800 26px var(--hd)}.lph span{color:var(--mute);font-size:14px}
+.lpg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.lpc{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.lpc .ipstrip{height:110px;margin:8px 8px 0;border-radius:16px}
+.lpb{padding:12px 14px 14px;display:grid;gap:10px}.lpb small{display:block;color:var(--mute);font-size:12px}.lpb b{font:700 16px var(--hd)}
+.lpa{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.lpa .btn{padding:6px 12px;font-size:13px}.lpa select{font-size:12px;padding:6px 8px;border-radius:999px;max-width:110px}
+.ib{border:1px solid var(--line);background:#fff;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px}.ib:hover{border-color:var(--ink)}
+.libnote{font-size:12.5px;color:var(--mute);margin-top:16px}
+.fav.sv{right:62px;font-size:15px}
+.modal{position:fixed;inset:0;background:#14161b66;backdrop-filter:blur(4px);z-index:80;display:grid;place-items:center;padding:16px}
+.mbox{width:min(440px,100%);display:grid;gap:14px;margin:0;box-shadow:0 30px 60px -20px #0007}.mbox h3{margin:0;font:800 22px var(--hd)}
+.mstrip{display:flex;height:54px;border-radius:12px;overflow:hidden}.mstrip span{flex:1}
+/* desde imagen */
+.imgin{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}@media(max-width:860px){.imgin{grid-template-columns:1fr}}
+#ixDropIn{display:grid;gap:8px;justify-items:center;color:var(--mute);font-size:14px}#ixDropIn b{font:800 22px var(--hd);color:var(--ink)}#ixDropIn img{max-width:100%;max-height:220px;border-radius:12px}
+.ixctl{margin:0;display:grid;gap:16px;align-content:start}.ixctl input[type=range]{width:100%}.ixhelp{font-size:13px;color:var(--mute);margin:0}
+.ixstage{margin:22px 0 0;padding:16px;display:grid;place-items:center;background:#1a1b20}
+.ixwrap{position:relative;display:inline-block;cursor:crosshair;max-width:100%}.ixwrap img{display:block;max-width:100%;max-height:62vh;border-radius:10px}
+.ixm{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px #0008;pointer-events:none;transition:.2s}.ixm.on{width:36px;height:36px;margin:-18px 0 0 -18px;border-color:#3346f0}
+.ixpal{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.ixs{flex:1 1 110px;min-height:140px;border-radius:18px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end;gap:1px;cursor:pointer;transition:.15s;box-shadow:inset 0 0 0 1px #0000000f}
+.ixs:hover{transform:translateY(-3px)}.ixs.on{outline:3px solid #3346f0;outline-offset:3px}.ixs b{font:700 14px var(--hd)}.ixs span{font:600 12px ui-monospace,monospace}.ixs small{font-size:11px;opacity:.75}
+.ixacts{margin-top:16px;display:grid;gap:12px}.ixacts small{color:var(--mute)}
+/* ¿ya existe? automático */
+.exauto{grid-column:1/-1;background:#fff}
+.risk{border-radius:14px;padding:12px 14px;display:grid;gap:2px;font-size:14px}.risk.ok{background:var(--okbg);color:#245c3c}.risk.warn{background:var(--warnbg);color:#7a4a00}.risk.bad{background:var(--badbg);color:#8a2a1f}.risk b{font:800 16px var(--hd)}
+#exAuto{display:grid;gap:10px}#exAuto:empty{display:none}
+.doms{display:flex;gap:8px;flex-wrap:wrap}.dom{font:500 13px ui-monospace,monospace;padding:6px 12px;border-radius:999px;background:var(--soft)}.dom.ok{background:var(--okbg);color:var(--ok)}.dom.bad{background:var(--badbg);color:var(--bad)}
+.ents{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}.ents a{display:grid;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-size:13px}.ents a.ex{border-color:var(--bad);background:#fff5f4}.ents small{color:var(--mute)}
+.exsm{font-size:13px!important;color:var(--mute)!important}.exload{color:var(--mute)}.exok{color:var(--ok)!important;font-size:13px!important}
+.lgwhy{margin-top:20px;padding:18px 22px}.lgwhy summary{cursor:pointer;font:700 16px var(--hd)}.lgwhy2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:14px;font-size:14px}@media(max-width:800px){.lgwhy2{grid-template-columns:1fr}}.lgwhy ul{padding-left:18px;margin:6px 0 12px;display:grid;gap:5px}
 </style>
 </head>
 <body>
 <header>
   <b><i></i>Paleta &amp; Tipo</b>
-  <nav><button data-tab="color" class="on">Color y contraste</button><button data-tab="insp">Inspiración</button><button data-tab="mock">Maquetas</button><button data-tab="tipo">Tipografía</button><button data-tab="logo">Logo</button></nav>
+  <nav><button data-tab="color" class="on">Color y contraste</button><button data-tab="insp">Inspiración</button><button data-tab="mock">Maquetas</button><button data-tab="lib">Mis paletas</button><button data-tab="tipo">Tipografía</button><button data-tab="logo">Logo</button></nav>
 </header>
 <main>
 <!-- ============ COLOR ============ -->
@@ -557,7 +594,7 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
     <div class="swatches" id="swatches"></div>
     
     <div class="export">Copiar paleta como:
-      <button class="btn" data-exp="hex">HEX</button><button class="btn" data-exp="css">Variables CSS</button><button class="btn" data-exp="scss">SCSS</button><button class="btn" data-exp="tw">Tailwind</button><button class="btn" data-exp="json">JSON</button><button class="btn" data-exp="link">Enlace para compartir</button>
+      <button class="btn" data-exp="hex">HEX</button><button class="btn" data-exp="css">Variables CSS</button><button class="btn" data-exp="scss">SCSS</button><button class="btn" data-exp="tw">Tailwind</button><button class="btn" data-exp="json">JSON</button><button class="btn" data-exp="link">Enlace para compartir</button><button class="btn pri" data-exp="save">💾 Guardar en Mis paletas</button>
     </div>
   </div>
 
@@ -691,6 +728,18 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
 
   <div id="lgAn" class="hidden">
     <div class="card lghero" id="lgHero"></div>
+    <details class="card lgwhy"><summary>¿En qué se basa este análisis y hasta dónde es fiable?</summary>
+      <div class="lgwhy2"><div><b>Lo que mide con datos objetivos (fiable)</b><ul>
+        <li><b>Contraste:</b> WCAG 2.1, la norma internacional de accesibilidad. Los elementos gráficos necesitan al menos 3:1 con el fondo.</li>
+        <li><b>Escala de grises:</b> diferencia de luminosidad perceptual (CIELAB) entre colores. Si es menor de 12 puntos, se confunden al fotocopiar y para personas daltónicas.</li>
+        <li><b>Reducción:</b> reduce el logo a 24 px y mide cuánto detalle se pierde, igual que pasaría en un favicon.</li>
+        <li><b>Una tinta, piezas sueltas, equilibrio, simetría, proporción, número de colores:</b> se miden píxel a píxel.</li></ul></div>
+      <div><b>En qué criterios de diseño se apoya</b><ul>
+        <li>Los principios clásicos de identidad corporativa: un logo debe ser <b>simple, memorable, versátil, escalable, apropiado y duradero</b>. Son la base habitual en manuales de marca y en la formación de diseño.</li>
+        <li>La psicología del color se usa solo como orientación: depende de la cultura y del contexto.</li></ul>
+        <b>Lo que NO puede juzgar</b><ul><li>Si la idea es buena u original, el significado del símbolo, la calidad de la tipografía o del trazado vectorial.</li><li>Si funciona para tu público concreto: eso solo se sabe probándolo con personas reales.</li></ul>
+        <p>Úsalo como una <b>revisión técnica rigurosa</b> que detecta problemas objetivos, no como sustituto del criterio de un diseñador.</p></div></div>
+    </details>
     <h2>Informe por apartados</h2>
     <div id="lgReport" class="lgrep"></div>
     <h2>Cómo se ve en distintos usos</h2>
@@ -705,6 +754,42 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
     <div class="exgrid" id="exGrid"></div>
   </div>
 </section>
+
+<!-- ============ MIS PALETAS ============ -->
+<section id="tab-lib" class="hidden">
+  <h1>Mis paletas</h1>
+  <p class="lead">Guarda tus paletas en carpetas por proyecto o cliente, o saca una paleta fiel de cualquier foto o imagen.</p>
+  <div class="lgtabs seg" id="libTabs"><button data-lb="f" class="on">Carpetas</button><button data-lb="i">Desde una imagen</button></div>
+
+  <div id="libF">
+    <div class="libbar card"><button class="btn pri" id="libSaveCur">💾 Guardar mi paleta actual</button><button class="btn" id="libNewF">＋ Nueva carpeta</button><span class="sp"></span><button class="btn" id="libExp">⬇ Exportar copia</button><label class="btn" style="cursor:pointer">⬆ Importar<input type="file" id="libImp" accept=".json,application/json" hidden></label></div>
+    <div class="liblay"><aside class="libside card" id="libFolders"></aside><div id="libPals"></div></div>
+    <p class="libnote">Se guardan en este navegador. Usa «Exportar copia» de vez en cuando para no perderlas si borras los datos del navegador o cambias de ordenador.</p>
+  </div>
+
+  <div id="libI" class="hidden">
+    <div class="imgin">
+      <label class="drop" id="ixDrop"><input type="file" id="ixFile" accept="image/*" hidden><div id="ixDropIn"><b>Arrastra una imagen</b><span>o haz clic · también puedes pegarla con Ctrl+V<br>Fotos, ilustraciones, capturas, moodboards…</span></div></label>
+      <div class="card ixctl">
+        <div class="lgf"><span class="mklab">Número de colores <b id="ixNl">6</b></span><input type="range" id="ixN" min="3" max="10" value="6"></div>
+        <div class="lgf"><span class="mklab">Qué priorizar</span><div class="seg" id="ixMode"><button data-m="bal" class="on">Equilibrado</button><button data-m="dom">Dominantes</button><button data-m="viv">Vivos</button></div></div>
+        <div class="lgf"><span class="mklab">Orden</span><div class="seg" id="ixSort"><button data-s="pct" class="on">Por presencia</button><button data-s="lum">Oscuro → claro</button><button data-s="hue">Por tono</button></div></div>
+        <p class="ixhelp">Los colores son <b>píxeles reales</b> de la imagen (no promedios), así que coinciden exactamente con lo que ves. Para afinar: haz clic en un color de la paleta y después en el punto de la imagen que quieras.</p>
+      </div>
+    </div>
+    <div id="ixOut" class="hidden">
+      <div class="ixstage card"><div class="ixwrap" id="ixWrap"><img id="ixImg" alt=""><div id="ixMk"></div></div></div>
+      <div class="ixpal" id="ixPal"></div>
+      <div class="ixacts card"><div id="ixInfo"></div><div class="row"><button class="btn pri" id="ixUse">Usar como mi paleta</button><button class="btn" id="ixSave">💾 Guardar en carpeta</button><button class="btn" id="ixMock">Ver en maquetas →</button><button class="btn" id="ixCopy">Copiar HEX</button></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="modal hidden" id="mdl"><div class="mbox card"><h3 id="mdlT">Guardar paleta</h3><div class="mstrip" id="mdlStrip"></div>
+  <div class="lgf"><span class="mklab">Nombre</span><input type="text" id="mdlName"></div>
+  <div class="lgf"><span class="mklab">Carpeta</span><select id="mdlF"></select></div>
+  <div class="lgf hidden" id="mdlNewW"><span class="mklab">Nombre de la carpeta nueva</span><input type="text" id="mdlNew" placeholder="Ej.: Cliente cafetería"></div>
+  <div class="row" style="justify-content:flex-end"><button class="btn" id="mdlNo">Cancelar</button><button class="btn pri" id="mdlOk">Guardar</button></div></div></div>
 
 <!-- ============ TIPOGRAFÍA ============ -->
 <section id="tab-tipo" class="hidden">
@@ -1434,7 +1519,7 @@ function initTipo(){if(fInit)return;fInit=true;let p=['Playfair Display','Source
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('show'),1600)}
 async function copy(t,msg){try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()}toast(msg||('Copiado: '+t))}
 const vname=(c,i)=>{try{return cname(c).normalize('NFD').replace(/[\u0300-\u036f]/g,'')+'-'+(i+1)}catch(e){return 'color-'+(i+1)}};
-$('.export').onclick=e=>{const k=e.target.dataset.exp;if(!k)return;let t;
+$('.export').onclick=e=>{const k=e.target.dataset.exp;if(!k)return;if(k==='save'){openSave([...pal],'Mi paleta');return}let t;
   if(k==='hex')t=pal.join(', ');
   else if(k==='css')t=':root {\n'+pal.map((c,i)=>`  --${vname(c,i)}: ${c};`).join('\n')+'\n}';
   else if(k==='scss')t=pal.map((c,i)=>`$${vname(c,i)}: ${c};`).join('\n');
@@ -1613,7 +1698,7 @@ function renderInsp(){
     const t=[dk,lt,'#FFFFFF'].reduce((x,y)=>ratio(p[2],y)>ratio(p[2],x)?y:x);let bb=p[2];if(ratio(bb,t)<4.5)bb=(fixColor(bb,t,4.5)||{c:bb}).c;const fav=FAV.includes(n);
     return `<article class="ip">
       <div class="ipstrip">${p.map(c=>`<span style="background:${c};color:${lum(c)>.18?'#14161b':'#fff'}" data-c="${c}" title="${colorName(c)} ${c} · clic para copiar"><em>${c}</em></span>`).join('')}</div>
-      <button class="fav${fav?' on':''}" data-fav="${n}" title="${fav?'Quitar de favoritas':'Guardar en favoritas'}">${fav?'♥':'♡'}</button>
+      <button class="fav sv" data-save="${p.join(',')}" data-sn="${n}" title="Guardar en Mis paletas">💾</button><button class="fav${fav?' on':''}" data-fav="${n}" title="${fav?'Quitar de favoritas':'Guardar en favoritas'}">${fav?'♥':'♡'}</button>
       <div class="ipb">
         <div class="iphead"><div style="min-width:0"><small class="ipcat">${cat}${gen?' · <span class="gen">generada</span>':''}</small><h4>${n}</h4></div><span class="aaa" title="Contraste del texto principal">AAA ${rt.toFixed(1)}:1</span></div>
         <div class="mood">${m.map(x=>`<span>${x}</span>`).join('')}</div>
@@ -1624,7 +1709,7 @@ function renderInsp(){
 }
 $('#inspCats').onclick=e=>{if(e.target.dataset.c){inspCat=e.target.dataset.c;if(inspCat!=='Todas'&&inspCat!=='♥ Favoritas'&&[...INSP,...GEN].filter(x=>x[0]===inspCat).length<12)genMore(12);renderInsp()}};
 $('#inspQ').oninput=renderInsp;$('#inspMore').onclick=()=>{const n0=GEN.length;genMore(12);renderInsp();toast((GEN.length-n0)+' paletas nuevas'+(inspCat==='Todas'?'':' de '+inspCat))};$('#inspN').onclick=e=>{const n=+e.target.dataset.n;if(!n)return;inspN=n;$('#inspN').querySelectorAll('button').forEach(b=>b.classList.toggle('on',+b.dataset.n===n));renderInsp()};
-$('#insp').onclick=e=>{const fv=e.target.closest('[data-fav]');if(fv){const n=fv.dataset.fav;FAV=FAV.includes(n)?FAV.filter(x=>x!==n):[...FAV,n];saveFav();renderInsp();toast(FAV.includes(n)?'Guardada en favoritas':'Quitada de favoritas');return}const u=e.target.dataset.use||e.target.dataset.mk;if(!u)return;pal=u.split(',');update();
+$('#insp').onclick=e=>{const sv=e.target.closest('[data-save]');if(sv){openSave(sv.dataset.save.split(','),sv.dataset.sn);return}const fv=e.target.closest('[data-fav]');if(fv){const n=fv.dataset.fav;FAV=FAV.includes(n)?FAV.filter(x=>x!==n):[...FAV,n];saveFav();renderInsp();toast(FAV.includes(n)?'Guardada en favoritas':'Quitada de favoritas');return}const u=e.target.dataset.use||e.target.dataset.mk;if(!u)return;pal=u.split(',');update();
   if(e.target.dataset.mk){showTab('mock');toast('Paleta cargada en las maquetas')}else{showTab('color');toast('Paleta cargada: puedes deshacer con ↶')}};
 renderInsp();
 
@@ -1864,6 +1949,7 @@ function renderExist(){
   const L=(href,t,s)=>`<a class="exl" href="${href}" target="_blank" rel="noopener"><b>${t} ↗</b><small>${s}</small></a>`;
   const need=n?'':'<p class="exneed">Escribe el nombre de la marca arriba para rellenar las búsquedas automáticamente.</p>';
   $('#exGrid').innerHTML=`
+  <div class="card exs exauto"><div class="exn">✓</div><h3>Comprobación automática del nombre</h3><p>Consulta en tiempo real los dominios .com/.net/.org, Wikidata (base de datos mundial de empresas, marcas y organizaciones) y Wikipedia.</p><button class="btn pri" id="exRun">Comprobar «${esc(n)||'nombre'}» ahora</button><div id="exAuto"></div></div>
   <div class="card exs"><div class="exn">1</div><h3>Busca la imagen del logo</h3><p>Los buscadores de imágenes encuentran logos iguales o muy parecidos. Copia tu logo y pégalo en cada uno.</p>
     <div class="exthumb">${LG.img?`<img src="${LG.url}" alt="">`:'<span>Sube tu logo en «Análisis» o arrástralo aquí arriba</span>'}</div>
     <button class="btn pri" id="exCopy">📋 Copiar logo al portapapeles</button>
@@ -1881,22 +1967,142 @@ function renderExist(){
   <div class="card exs"><div class="exn">4</div><h3>Qué mirar en los resultados</h3>
     <ul class="exul"><li><b>Mismo sector + parecido</b> → riesgo alto. Cambia el diseño o el nombre.</li><li><b>Mismo símbolo genérico</b> (hoja, casa, rayo, corona, iniciales en círculo) → es habitual, pero hace tu logo poco memorable.</li><li><b>Otro sector lejano</b> → menos riesgo legal, pero valora si quieres compartir imagen.</li><li><b>Mismos colores y tipografía</b> que un competidor directo → evítalo aunque el símbolo sea distinto.</li></ul>
     <div class="lgtip">Consejo de diseñador: si en la primera página de Google Lens aparecen logos casi iguales, el tuyo es demasiado genérico. Busca un detalle propio (un corte, una inicial integrada, una forma de tu sector menos obvia).</div></div>`;
-  const b=$('#exCopy');if(b)b.onclick=copyLogo;
+  const b=$('#exCopy');if(b)b.onclick=copyLogo;const ar=$('#exRun');if(ar)ar.onclick=autoCheck;
 }
-renderExist();
+setTimeout(renderExist,0);
+
+/* ===================== MIS PALETAS ===================== */
+let LIB={folders:[{id:'f1',name:'General',pals:[]}]};let libCur='f1';
+try{const s=JSON.parse(localStorage.getItem('lib'));if(s&&s.folders&&s.folders.length)LIB=s}catch(e){}
+const libSave=()=>{try{localStorage.setItem('lib',JSON.stringify(LIB))}catch(e){toast('No se pudo guardar en este navegador')}};
+const uid=()=>Math.random().toString(36).slice(2,9);
+const esc=s=>String(s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+function libRender(){
+  if(!LIB.folders.find(f=>f.id===libCur))libCur=LIB.folders[0].id;
+  $('#libFolders').innerHTML='<div class="mklab" style="padding:6px 10px">Carpetas</div>'+LIB.folders.map(f=>`<div class="lf${f.id===libCur?' on':''}" data-f="${f.id}"><span class="lfi">📁</span><b>${esc(f.name)}</b><span class="cnt">${f.pals.length}</span>
+    <span class="lfa"><button data-fren="${f.id}" title="Renombrar">✎</button>${LIB.folders.length>1?`<button data-fdel="${f.id}" title="Eliminar carpeta">🗑</button>`:''}</span></div>`).join('');
+  const F=LIB.folders.find(f=>f.id===libCur);
+  $('#libPals').innerHTML=`<div class="lph"><h3>${esc(F.name)}</h3><span>${F.pals.length} paleta${F.pals.length===1?'':'s'}</span></div>`+(F.pals.length?`<div class="lpg">${F.pals.map(p=>`<article class="lpc" data-p="${p.id}">
+      <div class="ipstrip">${p.colors.map(c=>`<span style="background:${c};color:${lum(c)>.18?'#14161b':'#fff'}" data-c="${c}" title="${colorName(c)} ${c} · clic para copiar"><em>${c}</em></span>`).join('')}</div>
+      <div class="lpb"><div><b>${esc(p.name)}</b><small>${p.colors.length} colores · ${new Date(p.date).toLocaleDateString('es')}</small></div>
+      <div class="lpa"><button class="btn pri" data-use="${p.id}">Usar</button><button class="btn" data-mk="${p.id}">Maquetas</button>
+        <select data-mv="${p.id}" title="Mover a otra carpeta"><option value="">Mover a…</option>${LIB.folders.filter(f=>f.id!==libCur).map(f=>`<option value="${f.id}">${esc(f.name)}</option>`).join('')}</select>
+        <button class="ib" data-ren="${p.id}" title="Renombrar">✎</button><button class="ib" data-cp="${p.id}" title="Copiar códigos">⧉</button><button class="ib" data-del="${p.id}" title="Eliminar">🗑</button></div></div></article>`).join('')}</div>`
+    :`<div class="empty">Esta carpeta está vacía.<br>Guarda tu paleta actual, una de Inspiración (botón 💾) o una sacada de una imagen.</div>`);
+}
+function findPal(id){for(const f of LIB.folders){const p=f.pals.find(x=>x.id===id);if(p)return[f,p]}return[]}
+$('#libFolders').onclick=e=>{const ren=e.target.dataset.fren,del=e.target.dataset.fdel;
+  if(ren){const f=LIB.folders.find(x=>x.id===ren);const n=prompt('Nuevo nombre de la carpeta',f.name);if(n&&n.trim()){f.name=n.trim();libSave();libRender()}return}
+  if(del){const f=LIB.folders.find(x=>x.id===del);if(confirm(`¿Eliminar la carpeta «${f.name}»${f.pals.length?' y sus '+f.pals.length+' paletas':''}? No se puede deshacer.`)){LIB.folders=LIB.folders.filter(x=>x.id!==del);libSave();libRender()}return}
+  const r=e.target.closest('[data-f]');if(r){libCur=r.dataset.f;libRender()}};
+$('#libPals').onclick=e=>{const d=e.target.dataset;const id=d.use||d.mk||d.ren||d.cp||d.del;if(!id)return;const[f,p]=findPal(id);if(!p)return;
+  if(d.use){pal=[...p.colors];update();showTab('color');toast('Paleta «'+p.name+'» cargada')}
+  else if(d.mk){pal=[...p.colors];update();showTab('mock')}
+  else if(d.ren){const n=prompt('Nuevo nombre',p.name);if(n&&n.trim()){p.name=n.trim();libSave();libRender()}}
+  else if(d.cp)copy(p.colors.join(', '),'Códigos copiados');
+  else if(d.del&&confirm(`¿Eliminar «${p.name}»?`)){f.pals=f.pals.filter(x=>x!==p);libSave();libRender();toast('Paleta eliminada')}};
+$('#libPals').onchange=e=>{const id=e.target.dataset.mv,to=e.target.value;if(!id||!to)return;const[f,p]=findPal(id);f.pals=f.pals.filter(x=>x!==p);LIB.folders.find(x=>x.id===to).pals.unshift(p);libSave();libRender();toast('Paleta movida')};
+$('#libNewF').onclick=()=>{const n=prompt('Nombre de la carpeta (p. ej. un cliente o proyecto)');if(n&&n.trim()){const f={id:uid(),name:n.trim(),pals:[]};LIB.folders.push(f);libCur=f.id;libSave();libRender()}};
+$('#libSaveCur').onclick=()=>openSave([...pal],'Mi paleta');
+$('#libExp').onclick=()=>{const b=new Blob([JSON.stringify(LIB,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='mis-paletas.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
+$('#libImp').onchange=async e=>{try{const d=JSON.parse(await e.target.files[0].text());if(!d.folders)throw 0;let n=0;d.folders.forEach(f=>{let t=LIB.folders.find(x=>x.name===f.name);if(!t){t={id:uid(),name:f.name,pals:[]};LIB.folders.push(t)}(f.pals||[]).forEach(p=>{if(Array.isArray(p.colors)&&p.colors.every(c=>norm(c))){t.pals.push({id:uid(),name:String(p.name||'Paleta'),colors:p.colors.map(norm),date:p.date||Date.now()});n++}})});libSave();libRender();toast(n+' paletas importadas')}catch(_){toast('El archivo no es una copia válida de Mis paletas')}e.target.value=''};
+// modal guardar
+let mdlColors=[];
+function openSave(colors,name){mdlColors=colors;$('#mdlStrip').innerHTML=colors.map(c=>`<span style="background:${c}"></span>`).join('');$('#mdlName').value=name||'';
+  $('#mdlF').innerHTML=LIB.folders.map(f=>`<option value="${f.id}"${f.id===libCur?' selected':''}>${esc(f.name)}</option>`).join('')+'<option value="__new">＋ Nueva carpeta…</option>';
+  $('#mdlNewW').classList.add('hidden');$('#mdl').classList.remove('hidden');setTimeout(()=>$('#mdlName').select(),30)}
+$('#mdlF').onchange=()=>$('#mdlNewW').classList.toggle('hidden',$('#mdlF').value!=='__new');
+$('#mdlNo').onclick=()=>$('#mdl').classList.add('hidden');$('#mdl').onclick=e=>{if(e.target.id==='mdl')$('#mdl').classList.add('hidden')};
+$('#mdlOk').onclick=()=>{let fid=$('#mdlF').value;if(fid==='__new'){const n=$('#mdlNew').value.trim()||'Nueva carpeta';const f={id:uid(),name:n,pals:[]};LIB.folders.push(f);fid=f.id}
+  const F=LIB.folders.find(f=>f.id===fid);F.pals.unshift({id:uid(),name:$('#mdlName').value.trim()||'Paleta sin nombre',colors:mdlColors,date:Date.now()});libCur=fid;libSave();libRender();$('#mdl').classList.add('hidden');toast('Guardada en «'+F.name+'»')};
+document.addEventListener('keydown',e=>{if(!$('#mdl').classList.contains('hidden')){if(e.key==='Escape')$('#mdl').classList.add('hidden');if(e.key==='Enter')$('#mdlOk').click()}});
+$('#libTabs').onclick=e=>{const t=e.target.dataset.lb;if(!t)return;$('#libTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b===e.target));$('#libF').classList.toggle('hidden',t!=='f');$('#libI').classList.toggle('hidden',t!=='i')};
+libRender();
+
+/* ---- paleta desde imagen (k-means en CIELAB, colores = píxeles reales) ---- */
+const IX={img:null,url:null,px:null,W:0,H:0,res:[],sel:-1,mode:'bal',sort:'pct'};
+function lab3(r,g,b){const R=lin(r),G=lin(g),B=lin(b);const f=t=>t>.008856?Math.cbrt(t):7.787*t+16/116;const X=f((R*.4124+G*.3576+B*.1805)/.95047),Y=f(R*.2126+G*.7152+B*.0722),Z=f((R*.0193+G*.1192+B*.9505)/1.08883);return[116*Y-16,500*(X-Y),200*(Y-Z)]}
+function ixLoad(file){if(!file||!/^image\//.test(file.type)){toast('Sube una imagen');return}if(IX.url)URL.revokeObjectURL(IX.url);IX.url=URL.createObjectURL(file);const im=new Image();
+  im.onload=()=>{IX.img=im;$('#ixDropIn').innerHTML=`<img src="${IX.url}" alt=""><span>${esc(file.name)} · clic para cambiar</span>`;$('#ixImg').src=IX.url;ixPrep();ixRun()};im.onerror=()=>toast('No se pudo leer la imagen');im.src=IX.url}
+function ixPrep(){const im=IX.img,S=260,sc=Math.min(1,S/Math.max(im.naturalWidth,im.naturalHeight));const W=Math.max(4,Math.round(im.naturalWidth*sc)),H=Math.max(4,Math.round(im.naturalHeight*sc));
+  const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(im,0,0,W,H);const d=x.getImageData(0,0,W,H).data;
+  const P=[];for(let p=0;p<W*H;p++){const i=p*4;if(d[i+3]<128)continue;const L=lab3(d[i],d[i+1],d[i+2]);P.push({r:d[i],g:d[i+1],b:d[i+2],L,x:p%W,y:(p/W)|0,ch:Math.hypot(L[1],L[2])})}
+  IX.px=P;IX.W=W;IX.H=H;IX.full=x}
+function ixRun(){if(!IX.px||!IX.px.length)return;const k=+$('#ixN').value,P=IX.px,mode=IX.mode;
+  const wt=p=>mode==='dom'?1:mode==='viv'?1+Math.pow(p.ch/45,2)*3:1+p.ch/60;
+  const step=Math.max(1,Math.floor(P.length/14000)),S=P.filter((_,i)=>i%step===0),w=S.map(wt);
+  const dist=(a,b)=>(a[0]-b[0])**2+(a[1]-b[1])**2+(a[2]-b[2])**2;
+  // k-means++ determinista (semilla fija para que el resultado no cambie al repetir)
+  let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  let C=[S[S.reduce((bi,p,i)=>w[i]>w[bi]?i:bi,0)].L.slice()];const D=S.map(p=>dist(p.L,C[0]));
+  while(C.length<k){let tot=0;D.forEach((d,i)=>tot+=d*w[i]);let t=rnd()*tot,j=0;for(;j<S.length-1;j++){t-=D[j]*w[j];if(t<=0)break}C.push(S[j].L.slice());S.forEach((p,i)=>{const dd=dist(p.L,C[C.length-1]);if(dd<D[i])D[i]=dd})}
+  const A=new Int32Array(S.length);for(let it=0;it<14;it++){S.forEach((p,i)=>{let b=0,bd=1e12;for(let j=0;j<C.length;j++){const dd=dist(p.L,C[j]);if(dd<bd){bd=dd;b=j}}A[i]=b});
+    const sum=C.map(()=>[0,0,0,0]);S.forEach((p,i)=>{const s=sum[A[i]];s[0]+=p.L[0]*w[i];s[1]+=p.L[1]*w[i];s[2]+=p.L[2]*w[i];s[3]+=w[i]});C=C.map((c,j)=>sum[j][3]?[sum[j][0]/sum[j][3],sum[j][1]/sum[j][3],sum[j][2]/sum[j][3]]:c)}
+  // color real = el píxel más cercano al centro de cada grupo (medoide)
+  const cnt=C.map(()=>0);S.forEach((p,i)=>cnt[A[i]]++);
+  const cen=C.map(()=>[0,0]);S.forEach((p,i)=>{cen[A[i]][0]+=p.x;cen[A[i]][1]+=p.y});cen.forEach((q,j)=>{if(cnt[j]){q[0]/=cnt[j];q[1]/=cnt[j]}});
+  let res=C.map((c,j)=>{let best=null,bd=1e12,bs=1e12;S.forEach((p,i)=>{if(A[i]!==j)return;const dd=dist(p.L,c),ds=(p.x-cen[j][0])**2+(p.y-cen[j][1])**2;if(dd<bd-0.5||(Math.abs(dd-bd)<=0.5&&ds<bs)){bd=Math.min(dd,bd);bs=ds;best=p}});return best?{c:hex2(best.r,best.g,best.b),x:best.x,y:best.y,pct:cnt[j]/S.length}:null}).filter(Boolean);
+  // quitar duplicados casi idénticos
+  const out=[];res.sort((a,b)=>b.pct-a.pct).forEach(o=>{const L=toLab(o.c);const m=out.find(q=>{const l=toLab(q.c);return Math.hypot(L[0]-l[0],L[1]-l[1],L[2]-l[2])<6});if(m)m.pct+=o.pct;else out.push(o)});
+  IX.res=out;IX.sel=-1;ixDraw()}
+function ixOrder(){const r=[...IX.res];if(IX.sort==='lum')r.sort((a,b)=>lum(a.c)-lum(b.c));else if(IX.sort==='hue')r.sort((a,b)=>{const A=hsl(a.c),B=hsl(b.c);return(A[1]<.12?999:A[0])-(B[1]<.12?999:B[0])||lum(a.c)-lum(b.c)});else r.sort((a,b)=>b.pct-a.pct);return r}
+function ixDraw(){const R=ixOrder();$('#ixOut').classList.remove('hidden');
+  $('#ixMk').innerHTML=R.map(o=>{const i=IX.res.indexOf(o);return`<span class="ixm${i===IX.sel?' on':''}" style="left:${(o.x+.5)/IX.W*100}%;top:${(o.y+.5)/IX.H*100}%;background:${o.c}" data-i="${i}"></span>`}).join('');
+  $('#ixPal').innerHTML=R.map(o=>{const i=IX.res.indexOf(o);return`<div class="ixs${i===IX.sel?' on':''}" data-i="${i}" style="background:${o.c};color:${lum(o.c)>.18?'#14161b':'#fff'}"><b>${colorName(o.c)}</b><span>${o.c}</span><small>${o.pct?Math.round(o.pct*100)+'%':'elegido a mano'}</small></div>`}).join('');
+  const cols=R.map(o=>o.c),dk=cols.reduce((a,b)=>lum(a)<lum(b)?a:b),lt=cols.reduce((a,b)=>lum(a)>lum(b)?a:b),rt=ratio(dk,lt);
+  $('#ixInfo').innerHTML=`<b>${cols.length} colores</b> · Pareja para texto: ${colorName(dk)} sobre ${colorName(lt)} <span class="tag ${rt>=7?'ok':rt>=4.5?'ok':'warn'}">${rt.toFixed(1)}:1 ${rt>=7?'AAA':rt>=4.5?'AA':'insuficiente'}</span>${rt<4.5?' <small>— al usarla, Color y contraste te propondrá cómo arreglarlo.</small>':''}`}
+$('#ixPal').onclick=e=>{const s=e.target.closest('[data-i]');if(!s)return;const i=+s.dataset.i;IX.sel=IX.sel===i?-1:i;ixDraw();if(IX.sel>=0)toast('Ahora haz clic en la imagen para elegir el color exacto')};
+$('#ixWrap').onclick=e=>{const r=$('#ixImg').getBoundingClientRect();const fx=(e.clientX-r.left)/r.width,fy=(e.clientY-r.top)/r.height;if(fx<0||fy<0||fx>1||fy>1)return;
+  const x=Math.min(IX.W-1,Math.floor(fx*IX.W)),y=Math.min(IX.H-1,Math.floor(fy*IX.H));const d=IX.full.getImageData(x,y,1,1).data;const c=hex2(d[0],d[1],d[2]);
+  if(IX.sel>=0){IX.res[IX.sel]={...IX.res[IX.sel],c,x,y};}else{IX.res.push({c,x,y,pct:0});toast('Color añadido: '+c)}ixDraw()};
+$('#ixN').oninput=()=>{$('#ixNl').textContent=$('#ixN').value;clearTimeout(IX.t);IX.t=setTimeout(ixRun,120)};
+$('#ixMode').onclick=e=>{const m=e.target.dataset.m;if(!m)return;IX.mode=m;$('#ixMode').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b===e.target));ixRun()};
+$('#ixSort').onclick=e=>{const s=e.target.dataset.s;if(!s)return;IX.sort=s;$('#ixSort').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b===e.target));ixDraw()};
+$('#ixFile').onchange=e=>ixLoad(e.target.files[0]);
+['dragenter','dragover'].forEach(ev=>$('#ixDrop').addEventListener(ev,e=>{e.preventDefault();$('#ixDrop').classList.add('over')}));
+['dragleave','drop'].forEach(ev=>$('#ixDrop').addEventListener(ev,e=>{e.preventDefault();$('#ixDrop').classList.remove('over')}));
+$('#ixDrop').addEventListener('drop',e=>ixLoad(e.dataTransfer.files[0]));
+document.addEventListener('paste',e=>{if($('#tab-lib').classList.contains('hidden'))return;const it=[...((e.clipboardData||{}).items||[])].find(i=>i.type.startsWith('image/'));if(it){$('#libTabs [data-lb=i]').click();ixLoad(it.getAsFile())}});
+const ixCols=()=>ixOrder().map(o=>o.c);
+$('#ixUse').onclick=()=>{pal=[...new Set(ixCols())];update();showTab('color');toast('Paleta de la imagen cargada')};
+$('#ixMock').onclick=()=>{pal=[...new Set(ixCols())];update();showTab('mock')};
+$('#ixSave').onclick=()=>openSave([...new Set(ixCols())],'Paleta de imagen');
+$('#ixCopy').onclick=()=>copy(ixCols().join(', '),'Códigos copiados');
+
+/* ---- comprobación automática del nombre ---- */
+async function autoCheck(){const n=$('#lgName').value.trim();const box=$('#exAuto');if(!n){box.innerHTML='<p class="exneed">Escribe el nombre de la marca para comprobarlo.</p>';return}
+  const slug=n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9-]/g,'');box.innerHTML='<p class="exload">Comprobando…</p>';
+  const dom=async t=>{try{const r=await fetch(`https://rdap.org/domain/${slug}.${t}`);return r.status===404?'libre':r.ok?'ocupado':'?'}catch(e){return'?'}};
+  const [d1,d2,d3,wd,wp]=await Promise.all([dom('com'),dom('net'),dom('org'),
+    fetch(`https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(n)}&language=es&uselang=es&limit=8&format=json&origin=*`).then(r=>r.json()).catch(()=>null),
+    fetch(`https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent('"'+n+'"')}&srlimit=5&format=json&origin=*`).then(r=>r.json()).catch(()=>null)]);
+  const ents=(wd&&wd.search||[]).map(e=>({l:e.label,d:e.description||'',u:e.concepturi||('https://www.wikidata.org/wiki/'+e.id),exact:(e.label||'').toLowerCase()===n.toLowerCase()}));
+  const biz=/empresa|compañ|marca|negocio|tienda|restaurante|banda|grupo|producto|software|aplicaci|cadena|club|organizaci|startup|company|brand/i;
+  const exactBiz=ents.filter(e=>e.exact&&biz.test(e.d)),exact=ents.filter(e=>e.exact);
+  const hits=wp&&wp.query?wp.query.searchinfo.totalhits:null;
+  let risk='bajo',rc='ok',why='No aparece como empresa o marca conocida y el dominio .com está libre.';
+  if(exactBiz.length||(d1==='ocupado'&&exact.length)){risk='alto';rc='bad';why=exactBiz.length?`Ya existe «${esc(exactBiz[0].l)}» (${esc(exactBiz[0].d)}).`:'El .com está ocupado y el nombre aparece en Wikidata.'}
+  else if(d1==='ocupado'||exact.length||hits>20){risk='medio';rc='warn';why=d1==='ocupado'?'El dominio .com ya está registrado por alguien.':'El nombre se usa para otras cosas; revisa que no sea de tu sector.'}
+  const dd=(t,s)=>`<span class="dom ${s==='libre'?'ok':s==='ocupado'?'bad':''}">${slug}.${t} <b>${s==='libre'?'libre':s==='ocupado'?'ocupado':'sin datos'}</b></span>`;
+  box.innerHTML=`<div class="risk ${rc}"><b>Riesgo de que el nombre ya exista: ${risk}</b><span>${why}</span></div>
+   <div class="mklab">Dominios</div><div class="doms">${dd('com',d1)}${dd('net',d2)}${dd('org',d3)}</div>
+   <div class="mklab">Coincidencias en Wikidata (empresas, marcas, personas, obras…)</div>
+   ${ents.length?`<div class="ents">${ents.slice(0,6).map(e=>`<a href="${e.u}" target="_blank" rel="noopener" class="${e.exact?'ex':''}"><b>${esc(e.l)}</b><small>${esc(e.d||'sin descripción')}</small></a>`).join('')}</div>`:'<p class="exok">Ninguna coincidencia.</p>'}
+   <div class="mklab">Wikipedia en español</div><p class="exsm">${hits==null?'No se pudo consultar.':hits?`${hits} artículo${hits>1?'s':''} mencionan «${esc(n)}».`:'Ningún artículo lo menciona.'}</p>
+   <p class="exsm">Comprobado en tiempo real. Esto revisa el <b>nombre</b>; los registros oficiales de marcas y la búsqueda por imagen no ofrecen acceso automático gratuito, así que esos pasos están abajo para hacerlos en un clic.</p>`}
 
 /* tabs */
-[['color','01 · Analiza tu paleta'],['insp','02 · Encuentra inspiración'],['mock','03 · Aplícala'],['tipo','04 · Tipografía'],['logo','05 · Revisa tu logo']].forEach(([t,e])=>{const x=document.querySelector('#tab-'+t+' > h1');if(x)x.dataset.eb=e});
+[['color','01 · Analiza tu paleta'],['insp','02 · Encuentra inspiración'],['mock','03 · Aplícala'],['lib','Tu biblioteca'],['tipo','04 · Tipografía'],['logo','05 · Revisa tu logo']].forEach(([t,e])=>{const x=document.querySelector('#tab-'+t+' > h1');if(x)x.dataset.eb=e});
 $('#tab-color > h1').textContent='Tu paleta';
 function tint(){const s=[...pal].sort((a,b)=>hsl(b)[1]-hsl(a)[1]);const st=document.documentElement.style;st.setProperty('--p1',s[0]||'#ccc');st.setProperty('--p2',s[1]||s[0]);st.setProperty('--p3',s[2]||s[0])}
 {const _u2=update;update=function(f){_u2(f);tint()}}tint();
 
-const TABS=['color','insp','mock','tipo','logo'];
+const TABS=['color','insp','mock','lib','tipo','logo'];
 function showTab(t){TABS.forEach(x=>$('#tab-'+x).classList.toggle('hidden',x!==t));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.tab===t));
-  if(t==='tipo'){initTipo();applySpec()}if(t==='mock')renderMock();scrollTo({top:0});try{history.replaceState(null,'','#'+t)}catch(e){}}
+  if(t==='tipo'){initTipo();applySpec()}if(t==='mock')renderMock();if(t==='lib')libRender();scrollTo({top:0});try{history.replaceState(null,'','#'+t)}catch(e){}}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
 document.addEventListener('click',e=>{const g=e.target.closest('[data-goto]');if(g)showTab(g.dataset.goto)});
-{const m=location.hash.match(/^#(insp|mock|tipo|logo)$/);if(m)showTab(m[1])}
+{const m=location.hash.match(/^#(insp|mock|lib|tipo|logo)$/);if(m)showTab(m[1])}
 </script>
 </body>
 </html>
