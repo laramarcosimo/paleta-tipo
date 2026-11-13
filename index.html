@@ -493,12 +493,52 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
 .ipcodes span:hover{background:#e9e6e0}.ipcodes i{width:12px;height:12px;border-radius:50%;box-shadow:0 0 0 1px #0002}
 .ipact{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:2px}.ipact .btn{padding:10px 12px;font-size:13.5px;text-align:center}
 .empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--mute);background:#ffffffb0;border:1px dashed var(--line);border-radius:24px}
+/* ===== logo ===== */
+.lgtabs{display:inline-flex;margin-bottom:18px;background:#ffffffb0;border:1px solid var(--line)}.lgtabs button{padding:9px 18px;font-size:14px}.lgtabs button.on{background:var(--ink);color:#fff}
+.lgin{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:10px}@media(max-width:860px){.lgin{grid-template-columns:1fr}}
+.drop{display:grid;place-items:center;min-height:320px;border:2px dashed #d8d4cc;border-radius:26px;background:#ffffffb0 repeating-conic-gradient(#f4f2ee 0 25%,transparent 0 50%) 0 0/22px 22px;cursor:pointer;text-align:center;padding:24px;transition:.15s}
+.drop:hover,.drop.over{border-color:var(--ink);background-color:#fff}
+#lgDropIn{display:grid;gap:8px;justify-items:center;color:var(--mute);font-size:14px}#lgDropIn b{font:800 22px var(--hd);color:var(--ink)}
+#lgDropIn img{max-width:100%;max-height:230px;object-fit:contain;filter:drop-shadow(0 10px 20px #0002)}
+.lgform{display:grid;gap:14px;margin:0;align-content:start}.lgf{display:grid;gap:6px}.lgf input,.lgf select,.lgf textarea{width:100%;font:inherit;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff}
+.lgf textarea{resize:vertical;line-height:1.5}
+.lghero{display:grid;grid-template-columns:auto auto minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:center;margin:26px 0 0;padding:28px}
+@media(max-width:1000px){.lghero{grid-template-columns:auto 1fr}.lghero .hr{grid-column:1/-1}}
+.lgimg{width:150px;height:150px;border-radius:20px;display:grid;place-items:center;padding:14px;box-shadow:inset 0 0 0 1px #0000000f}.lgimg img{max-width:100%;max-height:100%;object-fit:contain}
+.lghero .kpis span{font-size:12px}
+.lgrep{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.lgsec{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;display:grid;gap:8px;align-content:start}
+.lgsh{display:flex;justify-content:space-between;align-items:center}.lgsh b{font:800 18px var(--hd)}
+.bar{height:6px;border-radius:3px;background:var(--soft);overflow:hidden;margin-bottom:4px}.bar i{display:block;height:100%;border-radius:3px}
+.lgsec.ok .bar i{background:var(--ok)}.lgsec.warn .bar i{background:#d98a00}.lgsec.bad .bar i{background:var(--bad)}
+.lgsec p{margin:0;font-size:14px;line-height:1.45}.lgsec p.y{color:#245c3c}.lgsec p.n{color:#8a2a1f}
+.lgtip{background:var(--soft);border-radius:12px;padding:10px 12px;font-size:13.5px;margin-top:4px}
+.lgprev{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.lp{background:#fff;border:1px solid var(--line);border-radius:22px;padding:10px 10px 14px;display:grid;gap:4px}
+.lp b{font:700 15px var(--hd);padding:6px 6px 0}.lp small{color:var(--mute);font-size:12.5px;padding:0 6px}
+.lpb{height:170px;border-radius:16px;display:grid;place-items:center;padding:22px;box-shadow:inset 0 0 0 1px #0000000d}.lpb img{max-width:100%;max-height:120px;object-fit:contain}
+.lpsizes .lpb{display:flex;gap:14px;align-items:flex-end;justify-content:center}.sz{display:grid;gap:4px;justify-items:center}.sz small{font-size:10px;padding:0}
+.lpb .appic,.lpb .avat{width:84px;height:84px;display:grid;place-items:center;padding:12px;box-shadow:0 8px 18px -8px #0005}.appic{border-radius:20px}.avat{border-radius:50%}
+.lpb:has(.appic){display:flex;gap:22px;justify-content:center;align-items:center}.appic img,.avat img{max-width:100%;max-height:100%;object-fit:contain}
+.lgcl{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.lgcl>div{display:grid;gap:2px;background:var(--soft);border-radius:16px;padding:10px}.lgcl i{height:64px;border-radius:10px;margin-bottom:6px;box-shadow:inset 0 0 0 1px #0000000f}
+.lgcl small{font-size:11.5px;color:var(--mute)}
+.exwarn{background:#fffaf0;border-color:#f2d9a6;font-size:14px;margin-bottom:18px}
+.exgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:860px){.exgrid{grid-template-columns:1fr}}
+.exs{margin:0;position:relative;display:grid;gap:10px;align-content:start;padding:26px 24px 24px 76px}
+.exn{position:absolute;left:24px;top:24px;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 16px var(--hd)}
+.exs h3{margin:0;font:800 20px var(--hd)}.exs p{margin:0;color:#4d525c;font-size:14px}
+.exls{display:grid;gap:8px}.exl{display:grid;gap:2px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 14px;transition:.15s}
+.exl:hover{border-color:var(--ink);transform:translateX(3px)}.exl small{color:var(--mute);font-size:12.5px}
+.exthumb{height:120px;border-radius:14px;background:repeating-conic-gradient(#f1efeb 0 25%,#fff 0 50%) 0 0/16px 16px;display:grid;place-items:center;padding:12px;font-size:13px;color:var(--mute);text-align:center}.exthumb img{max-height:100%;max-width:100%;object-fit:contain}
+.exneed{background:var(--warnbg)!important;color:var(--warn)!important;border-radius:10px;padding:8px 10px;font-size:13px!important}
+.exul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px}
 </style>
 </head>
 <body>
 <header>
   <b><i></i>Paleta &amp; Tipo</b>
-  <nav><button data-tab="color" class="on">Color y contraste</button><button data-tab="insp">Inspiración</button><button data-tab="mock">Maquetas</button><button data-tab="tipo">Tipografía</button></nav>
+  <nav><button data-tab="color" class="on">Color y contraste</button><button data-tab="insp">Inspiración</button><button data-tab="mock">Maquetas</button><button data-tab="tipo">Tipografía</button><button data-tab="logo">Logo</button></nav>
 </header>
 <main>
 <!-- ============ COLOR ============ -->
@@ -625,6 +665,44 @@ details.mx{background:#ffffffb3;border:1px solid var(--line);border-radius:20px;
     <div class="mkstage">
   <div id="mock"></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ LOGO ============ -->
+<section id="tab-logo" class="hidden">
+  <h1>Analiza tu logo</h1>
+  <p class="lead">Sube tu logo y cuéntame de qué es. Lo reviso como lo haría un diseñador: color, contraste, versatilidad, legibilidad en pequeño, composición y si encaja con lo que quieres transmitir. La imagen no sale de tu ordenador.</p>
+
+  <div class="lgtabs seg"><button data-lt="an" class="on">Análisis</button><button data-lt="ex">¿Ya existe?</button></div>
+
+  <div class="lgin">
+    <label class="drop" id="lgDrop">
+      <input type="file" id="lgFile" accept="image/png,image/jpeg,image/webp,image/svg+xml,image/gif" hidden>
+      <div id="lgDropIn"><b>Arrastra tu logo aquí</b><span>o haz clic para elegirlo · PNG, JPG, SVG o WebP<br>Mejor en PNG con fondo transparente o sobre fondo liso</span></div>
+    </label>
+    <div class="card lgform">
+      <div class="lgf"><span class="mklab">Nombre de la marca</span><input type="text" id="lgName" placeholder="Ej.: Roadie"></div>
+      <div class="lgf"><span class="mklab">Sector</span><select id="lgSector"><option value="">Detectar a partir de la descripción</option></select></div>
+      <div class="lgf"><span class="mklab">Descríbelo con detalle</span><textarea id="lgDesc" rows="5" placeholder="Ej.: Estudio de cerámica artesanal para adultos. Queremos transmitir calidez, calma y algo hecho a mano, cercano pero cuidado. Público de 25-45 años. El símbolo es una vasija estilizada."></textarea></div>
+      <label class="chk"><input type="checkbox" id="lgText"> El logo incluye texto (nombre o eslogan)</label>
+      <button class="btn pri big" id="lgGo" disabled>Analizar logo</button>
+    </div>
+  </div>
+
+  <div id="lgAn" class="hidden">
+    <div class="card lghero" id="lgHero"></div>
+    <h2>Informe por apartados</h2>
+    <div id="lgReport" class="lgrep"></div>
+    <h2>Cómo se ve en distintos usos</h2>
+    <p class="sdesc">Un logo profesional tiene que funcionar en claro, en oscuro, en una sola tinta y muy pequeño (favicon, redes, sello).</p>
+    <div id="lgPrev" class="lgprev"></div>
+    <h2>Colores del logo</h2>
+    <div class="card" id="lgCols"></div>
+  </div>
+
+  <div id="lgEx" class="hidden">
+    <div class="card exwarn"><b>Importante:</b> ninguna web puede asegurarte al 100% que un logo es único. Esta guía te lleva paso a paso por las búsquedas que haría un diseñador antes de entregar un logo. Para registrar la marca, consulta con un agente de la propiedad industrial.</div>
+    <div class="exgrid" id="exGrid"></div>
   </div>
 </section>
 
@@ -1598,21 +1676,227 @@ $('#mkBrand').oninput=renderMock;$('#mkSlogan').oninput=renderMock;$('#mkRot').o
 combo('#mkH',renderMock);combo('#mkB',renderMock);
 $('#mkSync').onclick=()=>{const h=getF('#fH'),b=getF('#fB');let p=null;try{p=JSON.parse(localStorage.getItem('fpair'))}catch(e){}if(h&&b)p=[h.n,b.n];if(p){$('#mkH').value=p[0];$('#mkB').value=p[1];renderMock();toast('Tipografías copiadas de la pestaña Tipografía')}};
 
+/* ===================== LOGO ===================== */
+const SECT_KW={'Gastronomía':['restaurante','comida','cocina','bar','pizza','hamburgues','taper','catering','gastro','tapas','chef','brunch','helad','sushi','vino','bodega'],
+ 'Café y artesanía':['café','cafeter','artesan','cerámic','hecho a mano','taller','panader','pastel','cerveza','tostad','madera'],
+ 'Salud y bienestar':['salud','clínica','médic','dental','fisio','psicolog','yoga','spa','bienestar','nutrici','farmacia','terapia','meditaci'],
+ 'Tecnología':['tecnolog','software','app','digital','startup','saas','ia ','inteligencia artificial','datos','web','ciber','código','plataforma'],
+ 'Finanzas y legal':['banco','finanz','seguro','abogad','legal','despacho','asesor','inversi','contabil','gestor','notar'],
+ 'Lujo y moda':['lujo','moda','joyer','ropa','boutique','diseñador','alta costura','relojer','perfum','exclusiv'],
+ 'Belleza y cosmética':['belleza','cosmétic','peluquer','maquillaje','skincare','uñas','estética','barber'],
+ 'Infantil y educación':['niñ','infantil','escuela','academia','educa','colegio','guarder','juguet','clases','formación'],
+ 'Sostenible y eco':['eco','sostenib','orgánic','natural','verde','reciclaj','huerto','medio ambiente','energía'],
+ 'Deporte y energía':['deporte','gimnasio','fitness','entrena','running','club','fútbol','surf','bici','crossfit'],
+ 'Cultura y arte':['arte','cultura','museo','galería','música','festival','teatro','librer','fotograf','diseño gráfico','estudio creativo'],
+ 'Turismo y viajes':['viaje','turismo','hotel','hostal','playa','agencia de viajes','camping','rural','montaña'],
+ 'Inmobiliaria y construcción':['inmobiliar','construc','arquitect','reforma','interiorismo','vivienda','pisos'],
+ 'Eventos y bodas':['boda','evento','fiesta','celebraci','wedding','catering de eventos'],
+ 'Mascotas':['mascota','perro','gato','veterinar','animal'],
+ 'ONG y social':['ong','fundación','asociación','social','voluntari','solidar'],
+ 'Automoción':['coche','taller mecánico','automoci','moto','vehícul','eléctric'],
+ 'Floristería y jardín':['flor','jardín','planta','vivero','floristería','paisaj']};
+const DESC_WORDS=['cálida','calidez','calma','tranquila','serena','confianza','fiable','seria','profesional','elegante','lujo','exclusiva','premium','moderna','innovadora','tecnológica','divertida','alegre','juvenil','infantil','lúdica','natural','orgánica','sostenible','artesanal','hecho a mano','cercana','amable','familiar','energía','potente','dinámica','creativa','atrevida','audaz','minimal','sobria','clásica','tradicional','romántica','delicada','femenina','fresca','saludable','segura','sólida','barata','económica','accesible'];
+const WORD2MOOD={'calidez':'cálida','hecho a mano':'artesanal','energía':'enérgica','premium':'lujo','atrevida':'audaz','barata':'accesible','económica':'accesible','tranquila':'calma','serena':'calma','familiar':'cercana','amable':'cercana'};
+// matices que transmite cada familia de color (para cruzarlos con lo que la marca quiere transmitir)
+const COLMOOD={rojo:['energía','pasión','urgencia','potente','dinámica','audaz'],naranja:['creativa','cercana','alegre','divertida','juvenil','cálida'],amarillo:['alegre','optimista','juvenil','divertida','energía'],verde:['natural','sostenible','saludable','calma','fresca','orgánica'],
+ turquesa:['fresca','saludable','calma','moderna'],azul:['confianza','profesional','seria','tecnológica','calma','segura','fiable'],violeta:['creativa','lujo','innovadora','exclusiva'],rosa:['delicada','romántica','femenina','cercana','divertida'],
+ marrón:['artesanal','natural','cálida','tradicional','sólida'],crema:['cálida','natural','delicada','artesanal'],blanco:['minimal','fresca','sobria'],gris:['sobria','profesional','seria','minimal'],negro:['elegante','lujo','premium','sobria','seria','exclusiva']};
+let LG={img:null,url:null,res:null};
+$('#lgSector').innerHTML+=Object.keys(SECT_KW).map(k=>`<option>${k}</option>`).join('');
+// ---- carga ----
+function lgLoad(file){if(!file||!/^image\//.test(file.type)){toast('Sube una imagen (PNG, JPG, SVG o WebP)');return}
+  if(LG.url)URL.revokeObjectURL(LG.url);LG.url=URL.createObjectURL(file);const im=new Image();
+  im.onload=()=>{LG.img=im;$('#lgDropIn').innerHTML=`<img src="${LG.url}" alt="Tu logo"><span>${file.name} · clic para cambiar</span>`;$('#lgGo').disabled=false;
+    const ar=im.naturalWidth/im.naturalHeight;if(ar>2)$('#lgText').checked=true;renderExist()};
+  im.onerror=()=>toast('No se pudo leer la imagen');im.src=LG.url}
+$('#lgFile').onchange=e=>lgLoad(e.target.files[0]);
+['dragenter','dragover'].forEach(ev=>$('#lgDrop').addEventListener(ev,e=>{e.preventDefault();$('#lgDrop').classList.add('over')}));
+['dragleave','drop'].forEach(ev=>$('#lgDrop').addEventListener(ev,e=>{e.preventDefault();$('#lgDrop').classList.remove('over')}));
+$('#lgDrop').addEventListener('drop',e=>lgLoad(e.dataTransfer.files[0]));
+document.addEventListener('paste',e=>{if($('#tab-logo').classList.contains('hidden'))return;const it=[...(e.clipboardData||{}).items||[]].find(i=>i.type.startsWith('image/'));if(it)lgLoad(it.getAsFile())});
+$('.lgtabs').onclick=e=>{const t=e.target.dataset.lt;if(!t)return;document.querySelectorAll('.lgtabs button').forEach(b=>b.classList.toggle('on',b===e.target));
+  $('#lgAn').classList.toggle('hidden',t!=='an'||!LG.res);$('#lgEx').classList.toggle('hidden',t!=='ex');$('.lgin .lgform #lgGo').style.display=t==='an'?'':'none';if(t==='ex')renderExist()};
+$('#lgName').oninput=()=>{if(!$('#lgEx').classList.contains('hidden'))renderExist()};
+
+// ---- análisis de imagen ----
+const hex2=(r,g,b)=>'#'+[r,g,b].map(v=>Math.round(v).toString(16).padStart(2,'0')).join('').toUpperCase();
+const cdist=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);
+function lgAnalyze(){
+  const im=LG.img,S=360,sc=Math.min(1,S/Math.max(im.naturalWidth,im.naturalHeight)),W=Math.max(8,Math.round(im.naturalWidth*sc)),H=Math.max(8,Math.round(im.naturalHeight*sc));
+  const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(im,0,0,W,H);const d=x.getImageData(0,0,W,H).data;
+  // fondo
+  let transp=0;for(let i=3;i<d.length;i+=4)if(d[i]<200)transp++;const isT=transp/(W*H)>0.05;
+  let bg=null;if(!isT){const cnt={};const add=(i)=>{const k=[d[i]>>4,d[i+1]>>4,d[i+2]>>4].join(',');cnt[k]=(cnt[k]||[0,0,0,0]);cnt[k][0]++;cnt[k][1]+=d[i];cnt[k][2]+=d[i+1];cnt[k][3]+=d[i+2]};
+    for(let X=0;X<W;X++){add(X*4);add(((H-1)*W+X)*4)}for(let Y=0;Y<H;Y++){add(Y*W*4);add((Y*W+W-1)*4)}
+    const best=Object.values(cnt).sort((a,b)=>b[0]-a[0])[0];bg=[best[1]/best[0],best[2]/best[0],best[3]/best[0]]}
+  const mask=new Uint8Array(W*H);let n=0,x0=W,y0=H,x1=0,y1=0,sx=0,sy=0;
+  for(let p=0;p<W*H;p++){const i=p*4;const on=isT?d[i+3]>128:(d[i+3]>128&&cdist([d[i],d[i+1],d[i+2]],bg)>42);if(on){mask[p]=1;n++;const X=p%W,Y=(p/W)|0;if(X<x0)x0=X;if(X>x1)x1=X;if(Y<y0)y0=Y;if(Y>y1)y1=Y;sx+=X;sy+=Y}}
+  if(n<W*H*0.003)return{error:'No distingo el logo del fondo. Prueba con un PNG con fondo transparente o un fondo liso que contraste.'};
+  const bw=x1-x0+1,bh=y1-y0+1;
+  // colores (k-means sobre píxeles del logo, ignorando bordes antialias)
+  const px=[];const step=Math.max(1,Math.floor(n/7000));let k=0;
+  for(let p=0;p<W*H;p++){if(!mask[p])continue;const X=p%W,Y=(p/W)|0;const edge=X>0&&X<W-1&&Y>0&&Y<H-1&&(!mask[p-1]||!mask[p+1]||!mask[p-W]||!mask[p+W]);if(edge)continue;if(k++%step)continue;const i=p*4;px.push([d[i],d[i+1],d[i+2]])}
+  let cents=[px[0]];while(cents.length<6&&cents.length<px.length){let bi=0,bd=-1;for(let i=0;i<px.length;i+=3){const m=Math.min(...cents.map(c=>cdist(c,px[i])));if(m>bd){bd=m;bi=i}}if(bd<18)break;cents.push(px[bi])}
+  let asg=new Array(px.length).fill(0);
+  for(let it=0;it<10;it++){px.forEach((q,i)=>{let b=0,bd=1e9;cents.forEach((c,j)=>{const dd=cdist(c,q);if(dd<bd){bd=dd;b=j}});asg[i]=b});
+    cents=cents.map((c,j)=>{let s=[0,0,0],m=0;px.forEach((q,i)=>{if(asg[i]===j){s[0]+=q[0];s[1]+=q[1];s[2]+=q[2];m++}});return m?[s[0]/m,s[1]/m,s[2]/m]:c})}
+  let cols=cents.map((c,j)=>({c:hex2(...c),pct:asg.filter(a=>a===j).length/Math.max(1,px.length)}));
+  // fusionar colores casi iguales
+  cols.sort((a,b)=>b.pct-a.pct);const merged=[];cols.forEach(o=>{const L=toLab(o.c);const m=merged.find(q=>{const l=toLab(q.c);return Math.hypot(L[0]-l[0],L[1]-l[1],L[2]-l[2])<10});if(m)m.pct+=o.pct;else merged.push({...o})});
+  cols=merged.filter(o=>o.pct>=0.025).sort((a,b)=>b.pct-a.pct);
+  // luminancia sobre el fondo real (o blanco) y bordes
+  const g=new Float32Array(W*H);for(let p=0;p<W*H;p++){const i=p*4,a=d[i+3]/255,base=bg||[255,255,255];g[p]=(.2126*(d[i]*a+base[0]*(1-a))+.7152*(d[i+1]*a+base[1]*(1-a))+.0722*(d[i+2]*a+base[2]*(1-a)))}
+  let edges=0,area=0;for(let Y=Math.max(1,y0);Y<Math.min(H-1,y1+1);Y++)for(let X=Math.max(1,x0);X<Math.min(W-1,x1+1);X++){const p=Y*W+X;area++;
+    const gx=-g[p-W-1]-2*g[p-1]-g[p+W-1]+g[p-W+1]+2*g[p+1]+g[p+W+1],gy=-g[p-W-1]-2*g[p-W]-g[p-W+1]+g[p+W-1]+2*g[p+W]+g[p+W+1];if(Math.hypot(gx,gy)>110)edges++}
+  const edgeD=edges/Math.max(1,area);
+  // pérdida al reducir a 32px (detalle fino que desaparece)
+  const crop=document.createElement('canvas'),side=Math.max(bw,bh);crop.width=crop.height=128;const cx2=crop.getContext('2d',{willReadFrequently:true});
+  const drawMask=(ctx,sz)=>{const t=document.createElement('canvas');t.width=W;t.height=H;const tx=t.getContext('2d');const id=tx.createImageData(W,H);for(let p=0;p<W*H;p++)if(mask[p]){id.data[p*4+3]=255}tx.putImageData(id,0,0);ctx.clearRect(0,0,sz,sz);ctx.fillStyle='#fff';ctx.fillRect(0,0,sz,sz);ctx.drawImage(t,x0-(side-bw)/2,y0-(side-bh)/2,side,side,0,0,sz,sz)};
+  drawMask(cx2,128);const big=cx2.getImageData(0,0,128,128).data;
+  const sm=document.createElement('canvas');sm.width=sm.height=24;const smx=sm.getContext('2d');drawMask(smx,24);cx2.imageSmoothingEnabled=true;cx2.clearRect(0,0,128,128);cx2.drawImage(sm,0,0,128,128);const back=cx2.getImageData(0,0,128,128).data;
+  let diff=0;for(let i=3;i<big.length;i+=4)diff+=Math.abs(big[i]-back[i]);const loss=diff/(128*128*255);
+  // simetría y equilibrio
+  let same=0,tot=0;for(let Y=y0;Y<=y1;Y++)for(let X=x0;X<=x0+((bw/2)|0);X++){const a=mask[Y*W+X],b=mask[Y*W+(x1-(X-x0))];if(a||b){tot++;if(a&&b)same++}}
+  // piezas sueltas (componentes conectados)
+  const lab=new Int32Array(W*H);let comps=0;const minA=Math.max(4,n*0.004);for(let p=0;p<W*H;p++){if(!mask[p]||lab[p])continue;let st=[p],sz=0;lab[p]=-1;while(st.length){const q=st.pop();sz++;const X=q%W;for(const nb of [q-1,q+1,q-W,q+W]){if(nb<0||nb>=W*H)continue;if((nb===q-1&&X===0)||(nb===q+1&&X===W-1))continue;if(mask[nb]&&!lab[nb]){lab[nb]=-1;st.push(nb)}}}if(sz>=minA)comps++}
+  const sym=tot?same/tot:0,cx=(sx/n-x0)/bw-.5,cy=(sy/n-y0)/bh-.5,off=Math.hypot(cx,cy),fill=n/(bw*bh),ar=bw/bh,margin=Math.min(x0,y0,W-1-x1,H-1-y1)/Math.max(W,H);
+  return{comps,W,H,isT,bg:bg?hex2(...bg):null,cols,edgeD,loss,sym,off,fill,ar,margin,mask,x0,y0,bw,bh,cnv:c}}
+
+// ---- informe experto ----
+function lgReport(R){
+  const desc=($('#lgDesc').value||'').toLowerCase(),name=$('#lgName').value.trim();
+  let sector=$('#lgSector').value;if(!sector){let best=0;for(const[k,ws]of Object.entries(SECT_KW)){const s=ws.filter(w=>desc.includes(w)).length;if(s>best){best=s;sector=k}}}
+  const wants=[...new Set(DESC_WORDS.filter(w=>desc.includes(w)).map(w=>WORD2MOOD[w]||w))];
+  const main=R.cols.filter(o=>o.pct>=0.08),nC=R.cols.length;
+  const S={};const sec=(k,t,ic)=>S[k]={t,ic,s:100,ok:[],ko:[],tip:[]};const ok=(k,m)=>S[k].ok.push(m),ko=(k,m,p)=>{S[k].ko.push(m);S[k].s-=p},tip=(k,m)=>S[k].tip.push(m);
+  // 1 color
+  sec('color','Color','●');
+  if(nC<=3)ok('color',`Usa ${nC} color${nC>1?'es':''}: paleta contenida, fácil de reproducir y de recordar.`);else if(nC<=5){ko('color',`Usa ${nC} colores. Funciona, pero cada color extra encarece la impresión y resta impacto.`,10);tip('color','Prueba a reducir a 2–3 colores principales.')}else{ko('color',`Tiene ${nC} colores o degradados: demasiados para un logo versátil.`,25);tip('color','Simplifica a 2–3 tintas planas; los degradados dan problemas en bordado, vinilo o sello.')}
+  const onW=main.filter(o=>ratio(o.c,'#FFFFFF')<3),onD=main.filter(o=>ratio(o.c,'#121212')<3);
+  if(!onW.length)ok('color','Todos sus colores principales destacan sobre blanco (≥3:1, criterio WCAG para elementos gráficos).');else{ko('color',`Sobre blanco se pierde${onW.length>1?'n':''}: ${onW.map(o=>colorName(o.c)+' '+o.c).join(', ')} (${onW.map(o=>ratio(o.c,'#FFFFFF').toFixed(1)+':1').join(', ')}).`,12);tip('color','Oscurece ese color para la versión sobre fondo claro.')}
+  if(!onD.length)ok('color','También destacan sobre fondo oscuro.');else{ko('color',`Sobre fondo oscuro se pierde${onD.length>1?'n':''}: ${onD.map(o=>colorName(o.c)).join(', ')}.`,10);tip('color','Prepara una versión en negativo (blanco o colores aclarados) para fondos oscuros.')}
+  if(main.length>1){const tw=[];for(let i=0;i<main.length;i++)for(let j=i+1;j<main.length;j++)if(Math.abs(Lstar(main[i].c)-Lstar(main[j].c))<12)tw.push([main[i].c,main[j].c]);
+    if(tw.length){ko('color',`En escala de grises se confunden ${tw.map(t=>colorName(t[0])+' y '+colorName(t[1]).toLowerCase()).join('; ')}: solo se diferencian por el matiz.`,15);tip('color','Separa esos colores en claridad para que el logo funcione fotocopiado o para personas daltónicas.')}else ok('color','Sus colores se distinguen también en escala de grises.')}
+  // 2 versatilidad
+  sec('vers','Versatilidad','◐');
+  if(R.isT)ok('vers','El archivo tiene fondo transparente: listo para colocar sobre cualquier superficie.');else{ko('vers',`El archivo tiene fondo de color sólido (${colorName(R.bg)} ${R.bg}).`,10);tip('vers','Exporta una versión PNG/SVG con fondo transparente.')}
+  if(R.fill>0.12&&R.fill<0.75)ok('vers','La forma tiene buena relación lleno/vacío: la versión a una tinta (sello, grabado, vinilo) se leerá bien.');
+  else if(R.fill>=0.75){ko('vers','La forma es casi un bloque macizo: en una sola tinta pierde los detalles internos.',10);tip('vers','Usa espacios negativos (huecos) para que la silueta tenga lectura en una tinta.')}
+  else{ko('vers','Trazos muy finos o dispersos: en una tinta y en grabado puede romperse.',12);tip('vers','Engrosa los trazos más finos o agrúpalos.')}
+  // 3 escala
+  sec('scale','Legibilidad en pequeño','▪');
+  const lossP=Math.round(R.loss*100);
+  if(R.loss<0.06)ok('scale',`A 24 px conserva su forma (pérdida de detalle ${lossP}%): funciona como favicon o foto de perfil.`);
+  else if(R.loss<0.12){ko('scale',`A 24 px pierde algo de detalle (${lossP}%).`,12);tip('scale','Prepara una versión reducida (solo el símbolo o la inicial) para tamaños pequeños.')}
+  else{ko('scale',`A 24 px se pierde mucho detalle (${lossP}%): en favicon o redes no se reconocerá.`,28);tip('scale','Diseña un isotipo simplificado para tamaños pequeños.')}
+  if($('#lgText').checked){if(R.ar>3){ko('scale','Al llevar texto en formato muy horizontal, el texto quedará diminuto en espacios cuadrados.',10);tip('scale','Ten una versión apilada o solo símbolo para avatares.')}else ok('scale','Las proporciones permiten que el texto mantenga un tamaño razonable.')}
+  // 4 composición
+  sec('comp','Forma y composición','◇');
+  if(R.off<0.06)ok('comp','El peso visual está bien centrado: transmite estabilidad.');else if(R.off<0.13)ok('comp','Peso ligeramente descentrado: aporta dinamismo sin desequilibrar.');else{ko('comp','El peso visual está muy desplazado hacia un lado; puede parecer que "se cae".',12);tip('comp','Revisa el equilibrio óptico o compénsalo con otro elemento.')}
+  if(R.sym>0.85)ok('comp',`Muy simétrico (${Math.round(R.sym*100)}%): transmite orden, confianza y solidez.`);else if(R.sym<0.45)ok('comp',`Asimétrico (${Math.round(R.sym*100)}% de simetría): más dinámico y expresivo.`);
+  if(R.ar>3.2){ko('comp',`Formato muy alargado (${R.ar.toFixed(1)}:1). Difícil de encajar en redes, apps o sellos.`,12);tip('comp','Crea una versión compacta o cuadrada.')}else if(R.ar<0.45){ko('comp',`Formato muy vertical (1:${(1/R.ar).toFixed(1)}).`,8);tip('comp','Prepara una versión horizontal para cabeceras web.')}else ok('comp',`Proporción ${R.ar>=1.2?'horizontal':R.ar<=0.83?'vertical':'cuadrada'} (${R.ar.toFixed(2)}:1), fácil de adaptar.`);
+  if(!R.isT&&R.margin<0.02){ko('comp','El logo toca los bordes del archivo: no tiene área de respeto.',6);tip('comp','Deja un margen alrededor equivalente a la altura de un elemento del logo.')}
+  // 5 simplicidad
+  sec('simp','Simplicidad y memoria','✦');
+  const pieces=$('#lgText').checked?30:10;if(R.comps>pieces*2){ko('simp',`Está formado por ${R.comps} piezas sueltas: se percibe disperso y cuesta reconocerlo como una sola marca.`,40);ko('scale','Con tantas piezas pequeñas, en tamaño reducido se convierte en una mancha.',25);tip('simp','Agrupa los elementos en una silueta reconocible.')}else if(R.comps>pieces){ko('simp',`Tiene ${R.comps} piezas separadas: bastante fragmentado.`,18);tip('simp','Reduce o une elementos para una silueta más compacta.')}else ok('simp',`Silueta compacta (${R.comps} pieza${R.comps>1?'s':''}).`);
+  if(R.edgeD<0.07)ok('simp','Forma limpia y sencilla: fácil de recordar y de reproducir.');else if(R.edgeD<0.14)ok('simp','Complejidad moderada.');else{ko('simp','Muchos detalles y contornos: cuesta recordarlo y reproducirlo.',20);tip('simp','Elimina adornos que no aporten significado. Un buen logo se puede dibujar de memoria.')}
+  // 6 coherencia con la marca
+  sec('fit','Coherencia con tu marca','♥');
+  const fam=main.map(o=>cname(o.c)),colorMoods=[...new Set(fam.flatMap(f=>COLMOOD[f]||[]))];
+  if(sector&&PROF[sector]){const P=PROF[sector];const hs=main.filter(o=>hsl(o.c)[1]>.2).map(o=>hsl(o.c)[0]);const inR=h=>{const a=P.h[0],b=P.h[1];return b-a>=300||(h>=a&&h<=b)||(h+360>=a&&h+360<=b)};
+    if(!hs.length)ok('fit',`Logo neutro (sin color dominante): encaja en casi cualquier sector, incluido ${sector.toLowerCase()}.`);
+    else if(hs.some(inR))ok('fit',`Sus colores están en la gama habitual de ${sector.toLowerCase()}: el público lo identificará rápido con el sector.`);
+    else{S.fit.ok.push(`Sus colores se salen de la gama habitual de ${sector.toLowerCase()}. Puede ser una ventaja para diferenciarte, siempre que sea intencionado.`);S.fit.s-=5}}
+  else tip('fit','Elige el sector o descríbelo con más detalle para valorar el encaje.');
+  if(wants.length){const hit=wants.filter(w=>colorMoods.some(m=>m.startsWith(w.slice(0,5))||w.startsWith(m.slice(0,5)))),miss=wants.filter(w=>!hit.includes(w));
+    if(hit.length)ok('fit',`Quieres transmitir «${hit.join('», «')}» y sus colores (${[...new Set(fam)].join(', ')}) lo apoyan.`);
+    if(miss.length){ko('fit',`«${miss.join('», «')}» no se refleja en el color.`,Math.min(25,miss.length*8));const sug=Object.entries(COLMOOD).filter(([f,ms])=>miss.some(w=>ms.some(m=>m.startsWith(w.slice(0,5))||w.startsWith(m.slice(0,5))))).map(([f])=>f);if(sug.length)tip('fit',`Para «${miss.join(', ')}» suelen funcionar tonos ${sug.slice(0,3).join(', ')}; puede bastar con un acento.`)}
+    const fw=formality(wants),fc=formality(colorMoods.filter(m=>FORMAL[m]!==undefined));if(Math.abs(fw-fc)>1.2){ko('fit','El tono del color (más formal o más informal) no coincide con el de tu descripción.',10)}}
+  else tip('fit','Describe qué quieres transmitir (p. ej. «cercana, artesanal, calma») para comprobar si el color lo comunica.');
+  if(R.sym>0.85&&wants.some(w=>['divertida','dinámica','audaz','creativa','juvenil','lúdica'].includes(w)))ok('fit','Ojo: la forma muy simétrica es más seria que dinámica; puedes aportar movimiento con el color o la tipografía.');
+  // nota global
+  const W8={color:1.2,vers:1,scale:1.1,comp:.9,simp:1,fit:1.1};let tot=0,ws=0;for(const k in S){S[k].s=Math.max(0,Math.min(100,S[k].s));tot+=S[k].s*W8[k];ws+=W8[k]}
+  const mn=Math.min(...Object.values(S).map(s=>s.s));const score=Math.round(tot/ws*0.7+mn*0.3);return{S,score,sector,wants,name}}
+
+function lgRender(){
+  const R=lgAnalyze();if(R.error){toast(R.error);$('#lgAn').classList.add('hidden');return}LG.res=R;const Q=lgReport(R);
+  const g=Q.score>=85?'A':Q.score>=72?'B':Q.score>=58?'C':Q.score>=45?'D':'E',col=Q.score>=72?'var(--ok)':Q.score>=58?'#3a7d0b':Q.score>=45?'var(--warn)':'var(--bad)';
+  const ttl={A:'Logo sólido y profesional',B:'Buen logo con detalles a pulir',C:'Funciona, pero tiene puntos débiles',D:'Necesita revisión',E:'Conviene replantearlo'}[g];
+  const all=Object.values(Q.S),fixes=all.flatMap(s=>s.ko.length?s.tip.slice(0,1).map(t=>({t,s:s.t})):[]).slice(0,4);
+  $('#lgHero').innerHTML=`<div class="lgimg" style="background:${R.isT?'repeating-conic-gradient(#f1efeb 0 25%,#fff 0 50%) 0 0/18px 18px':R.bg}"><img src="${LG.url}" alt=""></div>
+   <div class="ring" style="--p:${Q.score};--c:${col}"><div><div><span class="g" style="color:${col}">${g}</span><small>${Q.score}/100</small></div></div></div>
+   <div class="hl"><div class="mklab">Veredicto${Q.name?' · '+Q.name.replace(/</g,''):''}</div><h3>${ttl}</h3>
+     <div style="color:var(--mute);font-size:14px">${Q.sector?'Sector: <b style="color:var(--ink)">'+Q.sector+'</b>':'Sector sin detectar'}${Q.wants.length?' · Quieres transmitir: <b style="color:var(--ink)">'+Q.wants.join(', ')+'</b>':''}</div>
+     <div class="kpis">${all.map(s=>`<span>${s.ic} ${s.t} <b>${s.s}</b></span>`).join('')}</div></div>
+   <div class="hr"><div class="mklab">Lo primero que cambiaría</div><div class="todo">${fixes.length?fixes.map(f=>`<a><span class="ic warn">→</span><span><b>${f.t}</b><small>${f.s}</small></span></a>`).join(''):'<a><span class="ic ok">✓</span><span><b>No veo problemas importantes</b><small>Revisa las versiones de abajo antes de cerrarlo.</small></span></a>'}</div></div>`;
+  $('#lgReport').innerHTML=all.map(s=>{const c=s.s>=80?'ok':s.s>=60?'warn':'bad';return`<div class="lgsec ${c}"><div class="lgsh"><b>${s.ic} ${s.t}</b><span class="tag ${c}">${s.s}/100</span></div><div class="bar"><i style="width:${s.s}%"></i></div>
+    ${s.ok.map(m=>`<p class="y">✓ ${m}</p>`).join('')}${s.ko.map(m=>`<p class="n">✕ ${m}</p>`).join('')}${s.ko.length&&s.tip.length?`<div class="lgtip"><b>Recomendación:</b> ${s.tip.join(' ')}</div>`:''}</div>`}).join('');
+  lgPreviews(R);
+  $('#lgCols').innerHTML=`<div class="lgcl">${R.cols.map(o=>`<div class="copyable" data-c="${o.c}"><i style="background:${o.c}"></i><b>${colorName(o.c)}</b><small>${o.c} · ${Math.round(o.pct*100)}%</small><small>Blanco ${ratio(o.c,'#FFFFFF').toFixed(1)}:1 · Negro ${ratio(o.c,'#000000').toFixed(1)}:1</small></div>`).join('')}</div>
+    <div class="row" style="margin-top:16px"><button class="btn pri" id="lgUse">Usar estos colores como paleta →</button><span style="font-size:13px;color:var(--mute)">Se añaden un tono oscuro y uno claro de su gama si faltan, para que puedas analizar textos.</span></div>`;
+  $('#lgUse').onclick=()=>{let p=R.cols.map(o=>o.c);const m=p.sort((a,b)=>hsl(b)[1]-hsl(a)[1])[0];const[H,S2]=hsl(m);if(Math.min(...p.map(Lstar))>20)p.push(fromHsl(H,Math.min(S2,.5),.11));if(Math.max(...p.map(Lstar))<92)p.push(fromHsl(H,Math.min(S2,.4),.965));pal=[...new Set(p)].slice(0,8);update();showTab('color');toast('Paleta del logo cargada')};
+  $('#lgAn').classList.remove('hidden');$('#lgAn').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function lgPreviews(R){
+  const main=(R.cols[0]||{}).c||'#333',dark='#121212';
+  const mono=(color)=>{const t=document.createElement('canvas');t.width=R.W;t.height=R.H;const tx=t.getContext('2d');const id=tx.createImageData(R.W,R.H);const[r,g,b]=rgb(color);for(let p=0;p<R.W*R.H;p++)if(R.mask[p]){id.data[p*4]=r;id.data[p*4+1]=g;id.data[p*4+2]=b;id.data[p*4+3]=255}tx.putImageData(id,0,0);return t.toDataURL()};
+  const cut=()=>{if(R.isT)return LG.url;const t=document.createElement('canvas');t.width=R.W;t.height=R.H;const tx=t.getContext('2d');tx.drawImage(R.cnv,0,0);const id=tx.getImageData(0,0,R.W,R.H);for(let p=0;p<R.W*R.H;p++)if(!R.mask[p])id.data[p*4+3]=0;tx.putImageData(id,0,0);return t.toDataURL()};
+  const clean=cut(),mB=mono('#111111'),mW=mono('#FFFFFF'),gray=(()=>{const t=document.createElement('canvas');t.width=R.W;t.height=R.H;const tx=t.getContext('2d');const im=new Image();return null})();
+  const P=(t,bg,src,note,extra='')=>`<div class="lp"><div class="lpb" style="background:${bg}"><img src="${src}" style="${extra}" alt=""></div><b>${t}</b><small>${note}</small></div>`;
+  const onWok=R.cols.filter(o=>o.pct>=.08).every(o=>ratio(o.c,'#FFFFFF')>=3),onDok=R.cols.filter(o=>o.pct>=.08).every(o=>ratio(o.c,dark)>=3);
+  $('#lgPrev').innerHTML=
+    P('Fondo blanco','#ffffff',clean,onWok?'✓ Se ve bien':'✕ Algún color se pierde')+
+    P('Fondo oscuro',dark,clean,onDok?'✓ Se ve bien':'✕ Necesita versión en negativo')+
+    P('Sobre su color principal',main,clean,'Útil para comprobar si necesitas versión en blanco')+
+    P('Una tinta (negro)','#ffffff',mB,'Sellos, fotocopias, grabado')+
+    P('Negativo (blanco)',dark,mW,'Sobre fotos o fondos oscuros')+
+    P('Escala de grises','#ffffff',clean,'Impresión B/N y daltonismo','filter:grayscale(1)')+
+    `<div class="lp lpsizes"><div class="lpb" style="background:#fff">${[16,24,32,48,64].map(s=>`<div class="sz"><img src="${clean}" style="width:${s}px;height:${s}px;object-fit:contain"><small>${s}px</small></div>`).join('')}</div><b>Tamaños pequeños</b><small>Favicon, pestaña del navegador, iconos</small></div>`+
+    `<div class="lp"><div class="lpb" style="background:#e9e6e0"><div class="appic" style="background:${R.isT?'#fff':R.bg}"><img src="${clean}" alt=""></div><div class="avat" style="background:${R.isT?'#fff':R.bg}"><img src="${clean}" alt=""></div></div><b>Icono de app y avatar</b><small>Recorte cuadrado y redondo</small></div>`;
+}
+$('#lgGo').onclick=()=>{if(LG.img)lgRender()};
+
+// ---- ¿ya existe? ----
+async function copyLogo(){if(!LG.img){toast('Primero sube el logo');return}try{const c=document.createElement('canvas');c.width=LG.img.naturalWidth;c.height=LG.img.naturalHeight;c.getContext('2d').drawImage(LG.img,0,0);
+  const blob=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);toast('Logo copiado: pégalo con Ctrl+V en el buscador')}catch(e){toast('Tu navegador no permite copiar imágenes: súbelo desde el buscador')}}
+function renderExist(){
+  const n=$('#lgName').value.trim(),q=encodeURIComponent(n),slug=n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const L=(href,t,s)=>`<a class="exl" href="${href}" target="_blank" rel="noopener"><b>${t} ↗</b><small>${s}</small></a>`;
+  const need=n?'':'<p class="exneed">Escribe el nombre de la marca arriba para rellenar las búsquedas automáticamente.</p>';
+  $('#exGrid').innerHTML=`
+  <div class="card exs"><div class="exn">1</div><h3>Busca la imagen del logo</h3><p>Los buscadores de imágenes encuentran logos iguales o muy parecidos. Copia tu logo y pégalo en cada uno.</p>
+    <div class="exthumb">${LG.img?`<img src="${LG.url}" alt="">`:'<span>Sube tu logo en «Análisis» o arrástralo aquí arriba</span>'}</div>
+    <button class="btn pri" id="exCopy">📋 Copiar logo al portapapeles</button>
+    <div class="exls">${L('https://lens.google.com/','Google Lens','Pega con Ctrl+V. El más completo.')}${L('https://www.bing.com/visualsearch','Bing Visual Search','Pega o sube la imagen.')}${L('https://tineye.com/','TinEye','Encuentra copias exactas y versiones editadas.')}${L('https://yandex.com/images/','Yandex Imágenes','Muy bueno con formas y siluetas.')}</div></div>
+  <div class="card exs"><div class="exn">2</div><h3>Comprueba registros de marcas</h3><p>Lo más importante legalmente: que no haya una marca registrada parecida <b>en tu mismo sector</b>.</p>${need}
+    <div class="exls">${L('https://branddb.wipo.int/es/similarname/results?sort=score%20desc&strategy=concept&brandName='+q,'WIPO Global Brand Database','Mundial. Permite buscar también por imagen («Imagen» → sube tu logo).')}
+    ${L('https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch='+q,'EUIPO · TMview','Marcas de la Unión Europea y oficinas nacionales.')}
+    ${L('https://consultas2.oepm.es/LocalizadorWeb/','OEPM · Localizador de marcas','Marcas registradas en España.')}
+    ${L('https://tmsearch.uspto.gov/search/search-results?query='+q,'USPTO','Estados Unidos.')}</div></div>
+  <div class="card exs"><div class="exn">3</div><h3>Busca el nombre</h3><p>Aunque el dibujo sea distinto, un nombre igual en tu sector genera confusión.</p>${need}
+    <div class="exls">${L('https://www.google.com/search?q=%22'+q+'%22','Google: «'+(n||'nombre')+'»','Búsqueda exacta del nombre.')}
+    ${L('https://www.google.com/search?q=%22'+q+'%22+logo&tbm=isch','Google Imágenes: logos «'+(n||'nombre')+'»','Ver logos que ya usan ese nombre.')}
+    ${L('https://www.instagram.com/'+slug+'/','Instagram @'+(slug||'nombre'),'¿Está libre el usuario?')}
+    ${L('https://www.namecheap.com/domains/registration/results/?domain='+slug,'Dominios '+(slug||'nombre')+'.com / .es','¿Está libre la web?')}</div></div>
+  <div class="card exs"><div class="exn">4</div><h3>Qué mirar en los resultados</h3>
+    <ul class="exul"><li><b>Mismo sector + parecido</b> → riesgo alto. Cambia el diseño o el nombre.</li><li><b>Mismo símbolo genérico</b> (hoja, casa, rayo, corona, iniciales en círculo) → es habitual, pero hace tu logo poco memorable.</li><li><b>Otro sector lejano</b> → menos riesgo legal, pero valora si quieres compartir imagen.</li><li><b>Mismos colores y tipografía</b> que un competidor directo → evítalo aunque el símbolo sea distinto.</li></ul>
+    <div class="lgtip">Consejo de diseñador: si en la primera página de Google Lens aparecen logos casi iguales, el tuyo es demasiado genérico. Busca un detalle propio (un corte, una inicial integrada, una forma de tu sector menos obvia).</div></div>`;
+  const b=$('#exCopy');if(b)b.onclick=copyLogo;
+}
+renderExist();
+
 /* tabs */
-[['color','01 · Analiza tu paleta'],['insp','02 · Encuentra inspiración'],['mock','03 · Aplícala'],['tipo','04 · Tipografía']].forEach(([t,e])=>{const x=document.querySelector('#tab-'+t+' > h1');if(x)x.dataset.eb=e});
+[['color','01 · Analiza tu paleta'],['insp','02 · Encuentra inspiración'],['mock','03 · Aplícala'],['tipo','04 · Tipografía'],['logo','05 · Revisa tu logo']].forEach(([t,e])=>{const x=document.querySelector('#tab-'+t+' > h1');if(x)x.dataset.eb=e});
 $('#tab-color > h1').textContent='Tu paleta';
 function tint(){const s=[...pal].sort((a,b)=>hsl(b)[1]-hsl(a)[1]);const st=document.documentElement.style;st.setProperty('--p1',s[0]||'#ccc');st.setProperty('--p2',s[1]||s[0]);st.setProperty('--p3',s[2]||s[0])}
 {const _u2=update;update=function(f){_u2(f);tint()}}tint();
 
-const TABS=['color','insp','mock','tipo'];
+const TABS=['color','insp','mock','tipo','logo'];
 function showTab(t){TABS.forEach(x=>$('#tab-'+x).classList.toggle('hidden',x!==t));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.tab===t));
   if(t==='tipo'){initTipo();applySpec()}if(t==='mock')renderMock();scrollTo({top:0});try{history.replaceState(null,'','#'+t)}catch(e){}}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
 document.addEventListener('click',e=>{const g=e.target.closest('[data-goto]');if(g)showTab(g.dataset.goto)});
-{const m=location.hash.match(/^#(insp|mock|tipo)$/);if(m)showTab(m[1])}
+{const m=location.hash.match(/^#(insp|mock|tipo|logo)$/);if(m)showTab(m[1])}
 </script>
 </body>
 </html>
-
-
-
